@@ -1,0 +1,9 @@
+name: Run Shell commands #Name of github actions workflow file
+on: [push]  #Event name we want to execute the workflow
+
+jobs:  #Job is a keyword within which we need to define the action
+  run-shell-command:  #action-name
+    runs-on: ubuntu-latest #where do we want to run our shell command
+    steps:  #name of the command
+      - name: Echo a String
+        run: echo "Hello Security!! This is my first github actions file" #Telling github to run this command
